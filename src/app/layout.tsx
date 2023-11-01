@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
+import { GeistSans, GeistMono } from 'geist/font'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
-  title: 'Eduardo Fontana | Portifolio',
+  title: 'Eduardo Fontana | Portifólio',
   description: 'FullStack Dev | Granduando em Eng. da Computação',
 }
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   )
 }
